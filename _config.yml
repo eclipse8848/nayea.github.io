@@ -1,12 +1,12 @@
-title: John Smith
+title: Nayea's Blog
 description: My Personal Blog
-author: John Smith
+author: Nayea OH
 logo: /hcz-jekyll-blog/static/img/avatar.png
-github: https://github.com/ashutosh2k12
+github: https://github.com/nayea
 about: Freelance developer
 
-baseurl: "http://aboutashu.com/hcz-jekyll-blog"
-url: "http://aboutashu.com/hcz-jekyll-blog"
+baseurl: "/nayea.github.io"
+url: "http://nayea.github.io"
 
 disqus_shortname: aboutashu
 google_analytics: UA-72862926-1

@@ -1,0 +1,33 @@
+/*! rwd.css © yamoo9.net, 2016 */
+
+/**
+* ----------------------------------------------------------------
+* 유연한 이미지
+* ----------------------------------------------------------------
+* RWD Image
+* Content Image
+* Background Image
+* ---------------------------------------------------------------- */
+
+.fluid img,.rwd-img {
+  width: 100%;
+  height: auto;
+}
+.rwd-bg {
+  width: 100%;
+  height: 0;
+  background-size: cover;
+}
+
+.rwd-crop-container{
+	position:relative;
+	height:200px;
+}
+
+.rwd-crop-container img{
+	position:absolute;
+	left:50%;
+	width:100%;
+	height:auto;
+	transform: translateX(-50%);
+}

@@ -1,0 +1,363 @@
+
+body{
+	background: #ededed;
+	font-size : 0.875rem;
+	line-height: 1.3125rem;
+	font-family: 'Varela Round', sans-serif;
+	color: #222222;
+
+}
+
+ul,li,a,img,div,main,nav,span{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+.PT-serif{
+  font-family: 'PT Serif', serif;
+  font-style: italic;
+}
+
+.oswald{
+  font-family: 'Oswald', sans-serif;
+}
+
+.varela{
+  font-family: 'Varela Round', sans-serif;
+}
+
+.clearfix{
+	content:' ';
+	display: block;
+	clear:both;
+
+}
+
+.readable-hidden{
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	padding:0;
+	margin:-1px;
+	border:0;
+	padding:0;
+}
+
+.readable-text-hidden{
+	text-indent: -9999em;
+}
+
+.half-width{
+	float:left;
+	width: 50%;
+	padding: 1.25rem;
+      margin-top: 1.25rem;
+	background: #fff;
+	box-sizing: border-box;
+}
+
+/*.align-center{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}*/
+
+.align-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+.title-deco{
+	display:inline;
+      text-transform: uppercase;
+	position:relative;
+}
+
+
+.title-deco::after{
+	content:' ';
+	position:absolute;
+	top:1em;
+	left:0;
+	width: 50%;
+	height: 10px;
+	border-bottom: 2px solid #FFC107;
+}
+
+.trans-hover a{
+	position: relative;
+	z-index: 0;
+	display: block;
+	color: #222222;
+	text-transform: uppercase;
+	box-sizing: border-box;
+}
+
+.trans-hover a::after{
+	content:' ';
+	position:absolute;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left:75%;
+	transition: all 0.4s;
+	background: #FFC107;
+
+}
+
+.trans-hover a:hover::after{
+	left:0;
+	background: #FFA000;
+}
+
+.container{
+	width: 80%;
+	height: 100vh;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+   
+}
+
+.menu{
+	background: #fff;
+	float: left;
+      width: 25%;
+	margin: 1.25rem;
+}
+
+.my-photo{
+	width: 100%;
+	height: 40vh;
+	background: url(../images/nayea.jpg) no-repeat ;
+      background-size: cover;
+      background-position: 0px -6.25rem;
+}
+
+.menu-list{
+	width:100%;
+}
+
+.menu-list a{
+	height: 50px;
+	background: #fff;
+	padding: 0.9375rem 1.25rem;
+	/*border-bottom: 1px solid #ededed;*/
+
+}
+
+.menu-list span{
+	/*margin-left: 135px;*/
+	display:inline-block;
+	box-sizing: border-box;
+	position: absolute;
+      top: 0.9375rem;
+      right:1.5625rem;
+     
+
+}
+
+/*-----------------------------------------------------------
+* about me
+-----------------------------------------------------------*/
+
+.main{
+	float: right;
+	width: 70%;
+	margin-top:1.25rem;
+}
+
+.introduction{
+	padding: 1.25rem;
+	background: #fff;
+	border-bottom: 1px solid #ededed;
+}
+
+.introduction h2{
+	 font-size: 1.5rem;
+}
+
+.introduction p,.profile p,.education p{
+	text-align: justify;
+}
+
+
+
+.main-btn{
+	margin-top: 20px;
+}
+
+.main-btn::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+.main-btn a{
+	 float:left;
+      width: 150px;
+	height: 50px;
+      background: #FFC107;
+	padding: 15px 10px;
+	margin-right: 10px;
+}
+
+.profile{
+	height: 400px;
+}
+
+.profile h2,.skill h2,.portfolio h2{
+	 font-size: 1.25rem;
+}
+
+.personal-info{
+
+}
+.personal-info th{
+	text-align: right;
+	padding-right: 10px;
+	font-size:0.75rem;
+}
+
+.personal-info td{
+	font-size: 0.75rem;
+}
+
+.education{
+	height:400px;
+}
+
+/*-----------------------------------------------------------
+* FDS
+-----------------------------------------------------------*/
+
+.FDS{
+      float:left;
+      width:100%;
+      /*margin-top: 20px;*/
+	padding: 20px;
+	background: #fff;
+	box-sizing:border-box;
+}
+
+.FDS-HTML-CSS, .FDS-JS,.FDS-TeamProject{
+	overflow:hidden;
+}
+
+.FDS-HTML-CSS,.FDS-JS{
+	margin-top: 20px;
+}
+
+.form,.product-catalog,.ui-kit,.font-control,.aware{
+	float:left;
+}
+
+.article,.hd-card,.attribute{
+	float:right;
+}
+
+
+.FDS a{
+	overflow: hidden;
+	position:relative;
+	z-index: 0;
+	margin-top:20px;
+	width: 48%;
+	height: 250px;
+	font-size: 1rem;
+	border:1px solid #ededed;
+}
+
+
+
+.FDS a::after{
+	content:' ';
+	position:absolute;
+	z-index: -1;
+	top: 0;
+	right: 0%;
+	bottom: 0;
+	left:0;
+	background:rgba(255,160,0,0);
+      transition: all 0.4s;
+}
+
+.FDS a .FDS-title {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	left: 50%;
+	top: 70%;
+	color:rgba(255,255,255,0);
+	transform: translate(-50%, -50%);
+	transition: all 0.9s;
+	font-size:1.25rem;
+}
+.FDS a:hover .FDS-title {
+	top: 50%;
+	color:rgba(255,255,255,1);
+} 
+
+.FDS a:hover::after{
+	background:rgba(255,160,0,0.8);
+}
+
+
+
+.article{
+	background: url(../images/article.jpg) no-repeat center;
+	background-size:cover;
+}
+
+.form{
+	background: url(../images/form.jpg) no-repeat -10px;
+	background-size:cover;
+}
+
+.hd-card{
+	background: url(../images/hd-card.jpg) no-repeat center;
+	background-size:contain;
+}
+
+.product-catalog{
+	background: url(../images/product-catalog.jpg) no-repeat center;
+	background-size:cover;
+}
+
+.attribute{
+	background: url(../images/attribute.jpg) no-repeat center;
+	background-size:contain;
+}
+
+.ui-kit{
+	background: url(../images/uikit.jpg) no-repeat center;
+	background-size:contain;
+}
+
+.font-control{
+	background: url(../images/font-control.jpg) no-repeat center;
+	background-size:contain;
+}
+
+.aware{
+	background: url(../images/aware.jpg) no-repeat center;
+	background-size:cover;
+}
+
+
+
+
+
+

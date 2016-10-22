@@ -1,62 +1,86 @@
----
-layout: default
-title: Blog
----
-<div class="well">
-    <div class="list-group">
-      {% for post in paginator.posts %}
-      <div class="list-group-item">
-        <div class="row-action-primary">
-          <i class="fa fa-sticky-note"></i>
-        </div>
-        <div class="row-content">
-          <div class="least-content">{{ post.date | date_to_string }}</div>
-          <h4 class="list-group-item-heading"><a href="{{ site.baseurl}}{{ post.url}}">{{ post.title }}</a></h4>
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>ohnayea-frontenddeveloper</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="modules/initialization/normalize.css"> -->
+       <link rel="stylesheet" href="modules/css/grid-system-mobile-first-fix-count.css">
+	<link rel="stylesheet" href="css/style-index-px.css">
+</head>
+<body>
 
-          <p class="list-group-item-text">{{ post.content | strip_html | truncatewords: 20 }}</p>
-        </div>
-      </div>
-      <div class="list-group-separator"></div>
-      {% endfor %}
-    </div>
-   
+<div class="container">
+	<header class="header font-deco t-7 m-full">
+		<a href=""><div class="logo">O<span>h</span>♥<br>N<span>a</span>Y<span>ea</span></div></a>
+		<h1 class="title d-3 t-3 m-1">
+			<div class="ohnayea" role="group">
+				<span class="char-1-o">o</span><!--
+                     --><span class="char-1-h">h</span><!--
+                     --><span class="char-1-">-</span><!--
+                     --><span class="char-1-n">n</span><!--
+                     --><span class="char-1-a-1">a</span><!--
+                     --><span class="char-1-y">y</span><!--
+                     --><span class="char-1-e">e</span><!--
+                     --><span class="char-1-a-2">a</span>
+			</div>
 
-    <!-- Pagination links -->
-    {% if paginator.total_pages > 1 %}
-    <ul class="pager">
-      {% if paginator.previous_page %}
-        <li class="previous">
-          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
-        </li>
-      {% else %}
-        <li class="previous disabled"><span aria-hidden="true">&laquo;</span></li>
-      {% endif %}
+			<div class="frontend" role="group">
+				<span class="char-2-f">f</span><!--
+                     --><span class="char-2-r">r</span><!--
+                     --><span class="char-2-o">o</span><!--
+                     --><span class="char-2-n-1">n</span><!--
+                     --><span class="char-2-t">t</span><!--
+                     --><span class="char-2-e">e</span><!--
+                     --><span class="char-2-n-2">n</span><!--
+                     --><span class="char-2-d">d</span>
+			</div>
 
-      <li><a href="/">First</a></li>
+			<div class="developer" role="group">
+				<span class="char-3-d">d</span><!--
+                     --><span class="char-3-e-1">e</span><!--
+                     --><span class="char-3-v">v</span><!--
+                     --><span class="char-3-e-2">e</span><!--
+                     --><span class="char-3-l">l</span><!--
+                     --><span class="char-3-o">o</span><!--
+                     --><span class="char-3-p">p</span><!--
+                     --><span class="char-3-e-3">e</span><!--
+                     --><span class="char-3-r">r</span>
+			</div>
+		</h1>
 
-      {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-          <li class="active">
-             <a>{{ page }}<span class="sr-only">(current)</span></a>
-          </li>
-        {% elsif page == 1 %}
-          <li><a href="/">{{ page }}</a></li>
-        {% else %}
-          <li>
-            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-          </li>
-        {% endif %}
-      {% endfor %}
+		<nav>
+			<ul>
+				<li><a class="menu aboutme" href="#aboutme">aboutme</a></li>
+				<li><a class="project" href="#project">project</a></li>
+				<li><a class="study" href="#study">study</a></li>
+			</ul>
+		</nav>
 
-      <li><a href="/page{{ paginator.total_pages }}/">Last</a></li>
+		<div class="contact d-3">
+			<ul>
+				<li><a href="https://github.com/nayea" target="_blank"><span class="fa fa-github" aria-hidden="true"></span><span class="git-add">github.com/nayea</span></a></li>
+				<li><span class="fa fa-envelope" aria-hidden="true"></span><span class="mail-add">onayeayo@gmail.com</span></li>
+				<li><a href="https://www.facebook.com/oh.naye?ref=bookmarks" target="_blank"><span class="fa fa-facebook-official" aria-hidden="true"></span><span class="facebook-add">www.facebook.com/oh.naye</span></a></li>
+			</ul>
+		</div>
+	</header>
 
-      {% if paginator.next_page %}
-        <li class="next">
-          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
-        </li>
-      {% else %}
-        <li class="next disabled"><span>&raquo;</span></li>
-      {% endif %}
-    </ul>
-    {% endif %}
-</div><!-- end #home -->
+</div>
+
+
+
+<script src="modules/JS/gs-utils.js"></script>
+<script src="modules/JS/char-ani.js"></script>
+<script>
+   document.onkeydown = function(event){
+    if(event.shiftKey && event.keyCode === 71){
+      toggleGrid();
+    }
+  }
+</script>
+	
+</body>
+</html>

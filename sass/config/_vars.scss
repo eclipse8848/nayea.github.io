@@ -1,0 +1,28 @@
+
+
+// 메뉴 창 사이즈 조절
+$menu-large: 91.9666%;
+$menu-small: 16.6666%;
+
+// 메뉴 폰트색
+$menu-color: #fff;
+
+// 애니메이션 시간
+$font-ani-time: 1.5s;
+
+//박스
+@mixin box-sizing($origin) {
+  -webkit-box-sizing: $origin;
+  -moz-box-sizing: $origin;
+  -o-box-sizing: $origin;
+  -ms-box-sizing: $origin;
+  box-sizing: $origin;
+}
+
+@mixin font-ani-reset{
+	position: absolute;
+	top: 0;
+}
+
+
+

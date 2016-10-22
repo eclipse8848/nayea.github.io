@@ -7,51 +7,55 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<!-- <link rel="stylesheet" href="modules/initialization/normalize.css"> -->
-       <link rel="stylesheet" href="modules/css/grid-system-mobile-first-fix-count.css">
-	<link rel="stylesheet" href="css/style-index-px.css">
+       <!-- <link rel="stylesheet" href="modules/css/grid-system-mobile-first-fix-count.css"> -->
+      
+       <link rel="stylesheet" href="css/style.css">
+       
+	<!-- <link rel="stylesheet" href="css/style-index-px.css"> -->
 </head>
+
 <body>
 
-<div class="container">
-	<header class="header font-deco t-7 m-full">
+<div class="grid-container">
+	<header class="header font-deco">
 		<a href=""><div class="logo">O<span>h</span>♥<br>N<span>a</span>Y<span>ea</span></div></a>
-		<h1 class="title d-3 t-3 m-1">
-			<div class="ohnayea" role="group">
-				<span class="char-1-o">o</span><!--
-                     --><span class="char-1-h">h</span><!--
-                     --><span class="char-1-">-</span><!--
-                     --><span class="char-1-n">n</span><!--
-                     --><span class="char-1-a-1">a</span><!--
-                     --><span class="char-1-y">y</span><!--
-                     --><span class="char-1-e">e</span><!--
-                     --><span class="char-1-a-2">a</span>
+		<div class="title">
+			<div class="ohnayea" role="group" >
+				<span class="char-1-o char-1-o-play">o</span><!--
+                     --><span class="char-1-h char-1-h-play">h</span><!--
+                     --><span class="char-1- char-1-play">-</span><!--
+                     --><span class="char-1-n char-1-n-play">n</span><!--
+                     --><span class="char-1-a-1 char-1-a-1-play">a</span><!--
+                     --><span class="char-1-y char-1-y-play">y</span><!--
+                     --><span class="char-1-e char-1-e-play">e</span><!--
+                     --><span class="char-1-a-2 char-1-a-2-play">a</span>
 			</div>
 
 			<div class="frontend" role="group">
-				<span class="char-2-f">f</span><!--
-                     --><span class="char-2-r">r</span><!--
-                     --><span class="char-2-o">o</span><!--
-                     --><span class="char-2-n-1">n</span><!--
-                     --><span class="char-2-t">t</span><!--
-                     --><span class="char-2-e">e</span><!--
-                     --><span class="char-2-n-2">n</span><!--
-                     --><span class="char-2-d">d</span>
+				<span class="char-2-f char-2-f-play">f</span><!--
+                     --><span class="char-2-r char-2-r-play">r</span><!--
+                     --><span class="char-2-o char-2-o-play">o</span><!--
+                     --><span class="char-2-n-1 char-2-n-1-play">n</span><!--
+                     --><span class="char-2-t char-2-t-play">t</span><!--
+                     --><span class="char-2-e char-2-e-play">e</span><!--
+                     --><span class="char-2-n-2 char-2-n-2-play">n</span><!--
+                     --><span class="char-2-d char-2-d-play">d</span>
 			</div>
 
 			<div class="developer" role="group">
-				<span class="char-3-d">d</span><!--
-                     --><span class="char-3-e-1">e</span><!--
-                     --><span class="char-3-v">v</span><!--
-                     --><span class="char-3-e-2">e</span><!--
-                     --><span class="char-3-l">l</span><!--
-                     --><span class="char-3-o">o</span><!--
-                     --><span class="char-3-p">p</span><!--
-                     --><span class="char-3-e-3">e</span><!--
-                     --><span class="char-3-r">r</span>
+				<span class="char-3-d char-3-d-play">d</span><!--
+                     --><span class="char-3-e-1 char-3-e-1-play">e</span><!--
+                     --><span class="char-3-v char-3-v-play">v</span><!--
+                     --><span class="char-3-e-2 char-3-e-2-play">e</span><!--
+                     --><span class="char-3-l char-3-l-play">l</span><!--
+                     --><span class="char-3-o char-3-o-play">o</span><!--
+                     --><span class="char-3-p char-3-p-play">p</span><!--
+                     --><span class="char-3-e-3 char-3-e-3-play">e</span><!--
+                     --><span class="char-3-r char-3-r-play">r</span>
 			</div>
-		</h1>
+		</div>
 
-		<nav>
+		<nav class="main-menu">
 			<ul>
 				<li><a class="menu aboutme" href="#aboutme">aboutme</a></li>
 				<li><a class="project" href="#project">project</a></li>
@@ -72,8 +76,8 @@
 
 
 
-<script src="modules/JS/gs-utils.js"></script>
-<script src="modules/JS/char-ani.js"></script>
+<script src="js/gs-utils.js"></script>
+<script src="js/char-ani.js"></script>
 <script>
    document.onkeydown = function(event){
     if(event.shiftKey && event.keyCode === 71){
